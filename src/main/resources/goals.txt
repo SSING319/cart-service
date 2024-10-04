@@ -1,0 +1,19 @@
+1 check the cart is already available for the user
+
+2 check item exists before adding to cart
+
+3 check if quantity is available
+
+4 update the cart by removing items from the cart or adding more quantity or reducing the quantity
+
+5 checkout
+
+topic creation
+docker exec -it ecom-kafka /opt/kafka/bin/kafka-topics.sh --create --topic check-quantity --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
+Created topic check-quantity.
+
+docker exec -it ecom-kafka /opt/kafka/bin/kafka-topics.sh --create --topic available-quantity --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
+Created topic check-quantity.
+
+
+add quantity ma wh product, cart, user id bhejega
